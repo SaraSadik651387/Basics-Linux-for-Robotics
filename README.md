@@ -39,6 +39,20 @@ To change the file owner and group:
 To execute the Python script:
 `python3 my_script.py`
 
+### **Examples**
+#### **Before Changing Permissions**
+`-rw-r--r-- 1 sarah sarah 15 Jan 6 14:55 my_script.py`
+#### **After Changing Permissions**
+`-rwxrwxr-x 1 sarah sarah 15 Jan 6 14:55 my_script.py`
+
+### **Error Handling**
+1.chown: invalid group
+  Ensure the group exists or create it:
+  `sudo groupadd travismedia`
+2.File not found:
+  Ensure the file exists in the current directory:
+  `ls -l`
+
 ## **Flowchart**
 The flowchart illustrates the steps to understand and modify file permissions
 
